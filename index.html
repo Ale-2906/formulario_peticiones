@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petición de Cambios</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h2>Formulario de Petición de Cambios de Software</h2>
+            <form >
+                <h3>Infromación General</h3>
+                <div class="form-group">
+                    <label for="nombre">Nombre del solicitante:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="departamento">Departamento:</label>
+                    <input type="text" id="departamento" name="departamento" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de la solicitud:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <h3>Descripción del Cambio Solicitado</h3>
+                <div class="form-group">
+                    <label for="titulo">Título del cambio solicitado:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción detallada del cambio:</label>
+                    <textarea id="descripcion" name="descripcion" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="motivo">Motivo del cambio:</label>
+                    <textarea id="motivo" name="motivo" required></textarea>
+                </div>
+                <h3>Impacto del Cambio </h3>
+                <div class="form-group">
+                    <label for="sistemas">Sistemas afectados:</label>
+                    <textarea id="sistemas" name="sistemas" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="impacto">Impacto esperado en el negocio:</label>
+                    <textarea id="impacto" name="impacto" required></textarea>
+                </div>
+                <h3>Prioridad y Plazo </h3>
+                <div class="form-group">
+                    <label for="prioridad">Prioridad del cambio:</label>
+                    <select id="prioridad" name="prioridad" required>
+                        <option value="alta">Alta</option>
+                        <option value="media">Media</option>
+                        <option value="baja">Baja</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_limite">Fecha límite para la implementación:</label>
+                    <input type="date" id="fecha_limite" name="fecha_limite" required>
+                </div>
+                <h3>Evaluación de Recursos</h3>
+                <div class="form-group">
+                    <label for="recursos">Recursos necesarios:</label>
+                    <textarea id="recursos" name="recursos" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="disponibilidad">Disponibilidad del equipo:</label>
+                    <textarea id="disponibilidad" name="disponibilidad" required></textarea>
+                </div>
+                
+                <h3>Aprobaciones</h3>
+                <table class="tabla">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Supervisor</th>
+                        <th>Departamento de TI</th>
+                        <th>Gerencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" id="supervisor_nombre" name="supervisor_nombre" required></td>
+                        <td><input type="text" id="supervisor_nombre" name="supervisor_nombre" required></td>
+                        <td><input type="text" id="supervisor_nombre" name="supervisor_nombre" required></td>
+                    </tr>
+                    <tr>
+                        <td>Firma</td>
+                        <td><input type="text" id="supervisor_firma" name="supervisor_firma" required></td>
+                        <td><input type="text" id="supervisor_firma" name="supervisor_firma" required></td>
+                        <td><input type="text" id="supervisor_firma" name="supervisor_firma" required></td>
+                    </tr>
+                    <tr>
+                        <td>Fecha</td>
+                        <td><input type="date" id="supervisor_fecha" name="supervisor_fecha" required></td>
+                        <td><input type="date" id="supervisor_fecha" name="supervisor_fecha" required></td>
+                        <td><input type="date" id="supervisor_fecha" name="supervisor_fecha" required></td>
+                    </tr>
+                </tbody>
+                </table>
+                <br></br>
+                <div class="form-group">
+                    <input type="submit"  value="Enviar Solicitud">
+                </div>
+            </form>
+        </div>
+    </section>
+   
+</body>
+</html>
